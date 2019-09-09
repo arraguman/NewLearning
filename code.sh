@@ -5,8 +5,12 @@ new_dir=/home/devops5/NewDirectory
 #FILES=du -h /var | sort -n -r | head -n 5
 for i in *.txt
 do
-   #sed -i 's/\r$//' $i 
    echo $i
+   #sed -i 's/\r$//' $i 
    cd $prev_dir
+   echo "hello"
+   echo "world"   
+echo "hi"
+echo "test"
    mv $i $new_dir
 done
